@@ -1,7 +1,7 @@
 name: CI/CD
 
 on:
-  puhs:
+  push:
     branches:
       - master
 
@@ -20,7 +20,7 @@ jobs:
         node-version: '14'
       
       - name: "Install dependencies"
-      run: nom install
+      run: npm install
         
       - name: "Build app"
-      run: nom run build  
+      run: npm run build  
